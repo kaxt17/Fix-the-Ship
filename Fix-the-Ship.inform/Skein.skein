@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x2c9c30" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x2c9c30" />
+  <item nodeId="node-0x2c9c30">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+You are in a ship travelling through space on a mission to save your home planet.  You have been fighting off many other people on this journey.
+
+Suddenly, a ship comes at you at full speed.  It powers up its lasers, all three of them.  Each laser hits one of you rooms - Engine Room, Oxygen Room, and Reactor Room.
+
+You quickly reach for your communication devices, and you ask them to stop attacking you.  They respond apoligizing because they thought you were going to attack them first.  They then beam over a wrench to help you fix the systems on your ship.
+
+
+Fix the Ship
+An Interactive Fiction by Kyle Axt
+Release 1 / Serial number 141003 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Cockpit
+This is the area where you have full control over your ship.  You can control the engines, reactor, oxygen, and many other things.  You can also see the position of other ships around you and communicate with them.
+
+The oxygen, engine room, and reactor are flashing red.  You really need to fix these now.
+
+To the west is the Storage Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="19">NO</temporary>
+    <children>
+      <child nodeId="node-0x2c9c80" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c9c80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="19">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c9cd0" />
+      <child nodeId="node-0x3fa6b0" />
+      <child nodeId="node-0x74c8e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x74c8e10">
+    <command xml:space="preserve">x storage box#2</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine Storage Box #1.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x74fad90" />
+    </children>
+  </item>
+  <item nodeId="node-0x74fad90">
+    <command xml:space="preserve">x storage box #1</command>
+    <result xml:space="preserve">Parts to fix the oxygen room and the engine room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x74e3d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x74e3d40">
+    <command xml:space="preserve">x storage box</command>
+    <result xml:space="preserve">Parts to fix the oxygen room and the engine room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x74cc570" />
+    </children>
+  </item>
+  <item nodeId="node-0x74cc570">
+    <command xml:space="preserve">open storage box</command>
+    <result xml:space="preserve">You open Storage Box #1, revealing Engine Parts and Oxygen Pipes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x7463d20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7463d20">
+    <command xml:space="preserve">get all</command>
+    <result xml:space="preserve">Engine Parts: Taken.
+Oxygen Pipes: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+  </item>
+  <item nodeId="node-0x3fa6b0">
+    <command xml:space="preserve">open storage box #2</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+  </item>
+  <item nodeId="node-0x2c9cd0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Engine Room
+The is the room where the engine power comes from.  If this is broken or has no power you can&apos;t move at all.  The ship engine is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="19">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c9d20" />
+      <child nodeId="node-0x3110d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3110d0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">MODEL #: RE-514
+
+This is the engine of your ship.  It appears to be broken from the attacking ship.  Maybe you can fix it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="18">YES</temporary>
+  </item>
+  <item nodeId="node-0x2c9d20">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Storage Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x2d1910" />
+    </children>
+  </item>
+  <item nodeId="node-0x2d1910">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Oxygen Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x2d1980" />
+    </children>
+  </item>
+  <item nodeId="node-0x2d1980">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Storage Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x2d19f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2d19f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Reactor Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+  </item>
+</Skein>
