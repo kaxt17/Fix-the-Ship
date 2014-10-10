@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x2c9c30" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2d6360" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2c9c30" />
-  <item nodeId="node-0x2c9c30">
+  <activeNode nodeId="node-0x2d6360" />
+  <item nodeId="node-0x2d6360">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -16,7 +16,7 @@ You quickly reach for your communication devices, and you ask them to stop attac
 
 Fix the Ship
 An Interactive Fiction by Kyle Axt
-Release 1 / Serial number 141003 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141007 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Cockpit
 This is the area where you have full control over your ship.  You can control the engines, reactor, oxygen, and many other things.  You can also see the position of other ships around you and communicate with them.
@@ -28,12 +28,27 @@ To the west is the Storage Room
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="19">NO</temporary>
+    <temporary score="72">NO</temporary>
     <children>
-      <child nodeId="node-0x2c9c80" />
+      <child nodeId="node-0x2d63b0" />
+      <child nodeId="node-0x2ce690" />
+      <child nodeId="node-0xad562a0" />
     </children>
   </item>
-  <item nodeId="node-0x2c9c80">
+  <item nodeId="node-0xad562a0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Wrench
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x78d3320" />
+    </children>
+  </item>
+  <item nodeId="node-0x78d3320">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Storage Room
@@ -44,14 +59,424 @@ To the north is the Oxygen Room, west is the Engine Room, south is the Reactor R
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="19">YES</temporary>
+    <temporary score="50">YES</temporary>
     <children>
-      <child nodeId="node-0x2c9cd0" />
-      <child nodeId="node-0x3fa6b0" />
-      <child nodeId="node-0x74c8e10" />
+      <child nodeId="node-0x78c2630" />
     </children>
   </item>
-  <item nodeId="node-0x74c8e10">
+  <item nodeId="node-0x78c2630">
+    <command xml:space="preserve">x storage box</command>
+    <result xml:space="preserve">Which do you mean, Storage Box #1 or Storage Box #2?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0xad7de90" />
+    </children>
+  </item>
+  <item nodeId="node-0xad7de90">
+    <command xml:space="preserve">x storage box 1</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x3237e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3237e0">
+    <command xml:space="preserve">x storage box #1</command>
+    <result xml:space="preserve">Parts to fix the oxygen room and the engine room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x3179e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3179e0">
+    <command xml:space="preserve">get parts</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x7840ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7840ed0">
+    <command xml:space="preserve">get al</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x78109d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x78109d0">
+    <command xml:space="preserve">get all</command>
+    <result xml:space="preserve">(Wrench)
+You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x78c6e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x78c6e30">
+    <command xml:space="preserve">open storage box #1</command>
+    <result xml:space="preserve">You open Storage Box #1, revealing Engine Parts and Oxygen Pipes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x317790" />
+    </children>
+  </item>
+  <item nodeId="node-0x317790">
+    <command xml:space="preserve">get parts</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0xad66f10" />
+    </children>
+  </item>
+  <item nodeId="node-0xad66f10">
+    <command xml:space="preserve">get pipes</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x20e6a00" />
+    </children>
+  </item>
+  <item nodeId="node-0x20e6a00">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Oxygen Room
+This room provides oxygen.  It providea all the oxygen to support all lifeforms on your ship.  If this goes down you better fix it quick.  The oxygen system is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x7804fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7804fd0">
+    <command xml:space="preserve">fix oxygen system</command>
+    <result xml:space="preserve">The Oxygen System is fixed.  You have obtained the Storage Box Key.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x7818a00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7818a00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x78d2e80" />
+    </children>
+  </item>
+  <item nodeId="node-0x78d2e80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Engine Room
+The is the room where the engine power comes from.  If this is broken or has no power you can&apos;t move at all.  The ship engine is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x7843790" />
+    </children>
+  </item>
+  <item nodeId="node-0x7843790">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x782e2e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x782e2e0">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+  </item>
+  <item nodeId="node-0x2ce690">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x348240" />
+    </children>
+  </item>
+  <item nodeId="node-0x348240">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x78a8dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x78a8dd0">
+    <command xml:space="preserve">open box 1</command>
+    <result xml:space="preserve">Which do you mean, Storage Box #1 or Storage Box #2?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x2043540" />
+    </children>
+  </item>
+  <item nodeId="node-0x2043540">
+    <command xml:space="preserve">open storage box 1</command>
+    <result xml:space="preserve">Which do you mean, Storage Box #1 or Storage Box #2?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x78dbd30" />
+    </children>
+  </item>
+  <item nodeId="node-0x78dbd30">
+    <command xml:space="preserve">open storage #1</command>
+    <result xml:space="preserve">You open Storage Box #1, revealing Engine Parts and Oxygen Pipes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0xadb12f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xadb12f0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">Engine Parts: Taken.
+Oxygen Pipes: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x205ecc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x205ecc0">
+    <command xml:space="preserve">open storage box #2</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x780ba70" />
+    </children>
+  </item>
+  <item nodeId="node-0x780ba70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Engine Room
+The is the room where the engine power comes from.  If this is broken or has no power you can&apos;t move at all.  The ship engine is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0xad943b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xad943b0">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x2048d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x2048d70">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x3fbdf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3fbdf0">
+    <command xml:space="preserve">fix engine with engine parts</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x20dc810" />
+    </children>
+  </item>
+  <item nodeId="node-0x20dc810">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0xada5670" />
+    </children>
+  </item>
+  <item nodeId="node-0xada5670">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0xadb03b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xadb03b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Oxygen Room
+This room provides oxygen.  It providea all the oxygen to support all lifeforms on your ship.  If this goes down you better fix it quick.  The oxygen system is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x32d380" />
+    </children>
+  </item>
+  <item nodeId="node-0x32d380">
+    <command xml:space="preserve">x oxygen system</command>
+    <result xml:space="preserve">MODEL #: KBM-7924
+
+This provides the oxygen for your ship.  The system is broken from the blast of the attacking ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x780d950" />
+    </children>
+  </item>
+  <item nodeId="node-0x780d950">
+    <command xml:space="preserve">fix kbm-7924</command>
+    <result xml:space="preserve">You&apos;re gonna need a wrench
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="16">YES</temporary>
+  </item>
+  <item nodeId="node-0x2d63b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xad5aa00" />
+      <child nodeId="node-0x2e5b00" />
+      <child nodeId="node-0x2d6400" />
+      <child nodeId="node-0x2e5ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e5ab0">
+    <command xml:space="preserve">open storage box #2</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+  </item>
+  <item nodeId="node-0x2d6400">
     <command xml:space="preserve">x storage box#2</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine Storage Box #1.
 
@@ -60,10 +485,10 @@ To the north is the Oxygen Room, west is the Engine Room, south is the Reactor R
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x74fad90" />
+      <child nodeId="node-0x2d6450" />
     </children>
   </item>
-  <item nodeId="node-0x74fad90">
+  <item nodeId="node-0x2d6450">
     <command xml:space="preserve">x storage box #1</command>
     <result xml:space="preserve">Parts to fix the oxygen room and the engine room.
 
@@ -72,10 +497,10 @@ To the north is the Oxygen Room, west is the Engine Room, south is the Reactor R
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x74e3d40" />
+      <child nodeId="node-0x2d64c0" />
     </children>
   </item>
-  <item nodeId="node-0x74e3d40">
+  <item nodeId="node-0x2d64c0">
     <command xml:space="preserve">x storage box</command>
     <result xml:space="preserve">Parts to fix the oxygen room and the engine room.
 
@@ -84,10 +509,10 @@ To the north is the Oxygen Room, west is the Engine Room, south is the Reactor R
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x74cc570" />
+      <child nodeId="node-0x2d6530" />
     </children>
   </item>
-  <item nodeId="node-0x74cc570">
+  <item nodeId="node-0x2d6530">
     <command xml:space="preserve">open storage box</command>
     <result xml:space="preserve">You open Storage Box #1, revealing Engine Parts and Oxygen Pipes.
 
@@ -96,10 +521,10 @@ To the north is the Oxygen Room, west is the Engine Room, south is the Reactor R
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x7463d20" />
+      <child nodeId="node-0x2d65a0" />
     </children>
   </item>
-  <item nodeId="node-0x7463d20">
+  <item nodeId="node-0x2d65a0">
     <command xml:space="preserve">get all</command>
     <result xml:space="preserve">Engine Parts: Taken.
 Oxygen Pipes: Taken.
@@ -109,16 +534,7 @@ Oxygen Pipes: Taken.
     <changed>YES</changed>
     <temporary score="6">YES</temporary>
   </item>
-  <item nodeId="node-0x3fa6b0">
-    <command xml:space="preserve">open storage box #2</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-  </item>
-  <item nodeId="node-0x2c9cd0">
+  <item nodeId="node-0x2e5b00">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Engine Room
@@ -129,11 +545,11 @@ The is the room where the engine power comes from.  If this is broken or has no 
     <changed>NO</changed>
     <temporary score="19">YES</temporary>
     <children>
-      <child nodeId="node-0x2c9d20" />
-      <child nodeId="node-0x3110d0" />
+      <child nodeId="node-0x2e5bc0" />
+      <child nodeId="node-0x2e5b50" />
     </children>
   </item>
-  <item nodeId="node-0x3110d0">
+  <item nodeId="node-0x2e5b50">
     <command xml:space="preserve">x engine</command>
     <result xml:space="preserve">MODEL #: RE-514
 
@@ -144,7 +560,7 @@ This is the engine of your ship.  It appears to be broken from the attacking shi
     <changed>YES</changed>
     <temporary score="18">YES</temporary>
   </item>
-  <item nodeId="node-0x2c9d20">
+  <item nodeId="node-0x2e5bc0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Storage Room
@@ -154,10 +570,10 @@ Storage Room
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x2d1910" />
+      <child nodeId="node-0x2e5c30" />
     </children>
   </item>
-  <item nodeId="node-0x2d1910">
+  <item nodeId="node-0x2e5c30">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Oxygen Room
@@ -167,10 +583,10 @@ Oxygen Room
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x2d1980" />
+      <child nodeId="node-0x2d6610" />
     </children>
   </item>
-  <item nodeId="node-0x2d1980">
+  <item nodeId="node-0x2d6610">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Storage Room
@@ -180,10 +596,10 @@ Storage Room
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x2d19f0" />
+      <child nodeId="node-0x2e5d80" />
     </children>
   </item>
-  <item nodeId="node-0x2d19f0">
+  <item nodeId="node-0x2e5d80">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Reactor Room
@@ -192,5 +608,276 @@ Reactor Room
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="6">YES</temporary>
+  </item>
+  <item nodeId="node-0xad5aa00">
+    <command xml:space="preserve">open storage box #1</command>
+    <result xml:space="preserve">You open Storage Box #1, revealing Engine Parts and Oxygen Pipes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xd763fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xd763fb0">
+    <command xml:space="preserve">get all</command>
+    <result xml:space="preserve">Engine Parts: Taken.
+Oxygen Pipes: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x7817560" />
+    </children>
+  </item>
+  <item nodeId="node-0x7817560">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Oxygen Room
+This room provides oxygen.  It providea all the oxygen to support all lifeforms on your ship.  If this goes down you better fix it quick.  The oxygen system is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x782caf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x782caf0">
+    <command xml:space="preserve">fix oxygen</command>
+    <result xml:space="preserve">(Oxygen Pipes)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xad79220" />
+    </children>
+  </item>
+  <item nodeId="node-0xad79220">
+    <command xml:space="preserve">fix oxygen system</command>
+    <result xml:space="preserve">The Oxygen System is fixed.  You have obtained the Storage Box Key.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78001c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x78001c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x2058b80" />
+    </children>
+  </item>
+  <item nodeId="node-0x2058b80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Engine Room
+The is the room where the engine power comes from.  If this is broken or has no power you can&apos;t move at all.  The ship engine is in the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78f3be0" />
+    </children>
+  </item>
+  <item nodeId="node-0x78f3be0">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">(Engine Parts)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x338d80" />
+    </children>
+  </item>
+  <item nodeId="node-0x338d80">
+    <command xml:space="preserve">fix system engine</command>
+    <result xml:space="preserve">The Engine is fixedYou didn&apos;t need all the parts to fix the engine, so you have recieved some spare parts.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x7807e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x7807e10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78df260" />
+    </children>
+  </item>
+  <item nodeId="node-0x78df260">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Reactor Room
+This is the reactor room.  It provides the power for everything in your ship.  There is a reactor in the middle of the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78f2e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x78f2e30">
+    <command xml:space="preserve">fix reacotr</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78cb980" />
+    </children>
+  </item>
+  <item nodeId="node-0x78cb980">
+    <command xml:space="preserve">fix reactor</command>
+    <result xml:space="preserve">you need the Reactor Part
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xada17c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xada17c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Storage Room
+The storage room is the room where you keep all of your stuff.  Everything is kept neatly organized in boxes for tools, parts, and scrap.  Storage Box #1 is filled with parts to fix the oxygen room and the engine room.  Storage Box #2 is filled with parts to fix the reactor, but you seemed to have lost the key somewhere.
+
+To the north is the Oxygen Room, west is the Engine Room, south is the Reactor Room, and east is the Cockpit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xadbd3e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xadbd3e0">
+    <command xml:space="preserve">open storage box #2</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xad8fd10" />
+    </children>
+  </item>
+  <item nodeId="node-0xad8fd10">
+    <command xml:space="preserve">unlock storage box #2 with box key</command>
+    <result xml:space="preserve">You unlock Storage Box #2.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x2037b00" />
+    </children>
+  </item>
+  <item nodeId="node-0x2037b00">
+    <command xml:space="preserve">open storage box #2</command>
+    <result xml:space="preserve">You open Storage Box #2, revealing Reactor Part.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xadce390" />
+    </children>
+  </item>
+  <item nodeId="node-0xadce390">
+    <command xml:space="preserve">get part</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x78cb520" />
+    </children>
+  </item>
+  <item nodeId="node-0x78cb520">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Reactor Room
+This is the reactor room.  It provides the power for everything in your ship.  There is a reactor in the middle of the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0x7813580" />
+    </children>
+  </item>
+  <item nodeId="node-0x7813580">
+    <command xml:space="preserve">fix reactor</command>
+    <result xml:space="preserve">(Reactor Part)
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+    <children>
+      <child nodeId="node-0xd767c80" />
+    </children>
+  </item>
+  <item nodeId="node-0xd767c80">
+    <command xml:space="preserve">fix system reactor</command>
+    <result xml:space="preserve">
+
+    *** Good Job, Your Ship is now fully functioning again. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="71">YES</temporary>
   </item>
 </Skein>
